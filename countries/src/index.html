@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HW-12-COUNTRIES</title>
+  </head>
+  <body>
+    <div class="fetch-coutry-wrapper">
+      <div class="input-wrapper">
+        <input type="text" id="get-country" />
+        <button type="submit" id="get-country-btn">Finde</button>
+      </div>
+      <div id="country-box">
+        <template class="country-box__container">
+          <ul class="list">
+            <li>Capital</li>
+            <li>Population</li>
+            <li>
+              Languages
+              <ul class="language-list">
+                <li>German</li>
+                <li>French</li>
+                <li>Italian</li>
+              </ul>
+            </li>
+          </ul>
+          <div class="country-box__img">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Switzerland.svg/1200px-Flag_of_Switzerland.svg.png"
+              width="200"
+              alt="#"
+            />
+          </div>
+        </template>
+      </div>
+    </div>
+    <script src="/countries/src/fetchCountries.js" type="module"></script>
+  </body>
+</html>
